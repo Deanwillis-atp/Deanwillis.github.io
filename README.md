@@ -13,8 +13,8 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #e0e0e0;
+            background: #000000;
             min-height: 100vh;
         }
 
@@ -25,23 +25,24 @@
         }
 
         header {
-            background: rgba(255, 255, 255, 0.95);
+            background: #1a1a1a;
             padding: 40px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
             margin-bottom: 30px;
             text-align: center;
+            border: 1px solid #333;
         }
 
         h1 {
             font-size: 2.5em;
-            color: #667eea;
+            color: #00d4ff;
             margin-bottom: 10px;
         }
 
         .subtitle {
             font-size: 1.2em;
-            color: #666;
+            color: #b0b0b0;
             margin-bottom: 15px;
         }
 
@@ -54,37 +55,39 @@
         }
 
         .contact-links a {
-            color: #667eea;
+            color: #00d4ff;
             text-decoration: none;
             padding: 8px 16px;
-            border: 2px solid #667eea;
+            border: 2px solid #00d4ff;
             border-radius: 25px;
             transition: all 0.3s;
         }
 
         .contact-links a:hover {
-            background: #667eea;
-            color: white;
+            background: #00d4ff;
+            color: #000;
             transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 212, 255, 0.4);
         }
 
         .about-section {
-            background: rgba(255, 255, 255, 0.95);
+            background: #1a1a1a;
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
             margin-bottom: 30px;
+            border: 1px solid #333;
         }
 
         .about-section h2 {
-            color: #667eea;
+            color: #00d4ff;
             margin-bottom: 15px;
             font-size: 2em;
         }
 
         .about-section p {
             font-size: 1.1em;
-            color: #555;
+            color: #c0c0c0;
         }
 
         .projects-grid {
@@ -95,39 +98,41 @@
         }
 
         .project-card {
-            background: rgba(255, 255, 255, 0.95);
+            background: #1a1a1a;
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
             transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #333;
         }
 
         .project-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 15px 40px rgba(0, 212, 255, 0.3);
+            border-color: #00d4ff;
         }
 
         .project-card h3 {
-            color: #667eea;
+            color: #00d4ff;
             margin-bottom: 15px;
             font-size: 1.5em;
         }
 
         .project-card p {
-            color: #555;
+            color: #c0c0c0;
             margin-bottom: 15px;
         }
 
         .key-achievement {
-            background: #f0f4ff;
+            background: #0a2a3a;
             padding: 15px;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid #00d4ff;
             margin: 15px 0;
             border-radius: 5px;
         }
 
         .key-achievement strong {
-            color: #667eea;
+            color: #00d4ff;
         }
 
         .technologies {
@@ -135,7 +140,7 @@
         }
 
         .technologies h4 {
-            color: #667eea;
+            color: #00d4ff;
             margin-bottom: 10px;
         }
 
@@ -146,36 +151,40 @@
         }
 
         .tech-tag {
-            background: #667eea;
-            color: white;
+            background: #00d4ff;
+            color: #000;
             padding: 5px 12px;
             border-radius: 15px;
             font-size: 0.9em;
+            font-weight: 600;
         }
 
         .github-link {
             display: inline-block;
             margin-top: 15px;
             padding: 10px 20px;
-            background: #667eea;
-            color: white;
+            background: #00d4ff;
+            color: #000;
             text-decoration: none;
             border-radius: 25px;
             transition: all 0.3s;
+            font-weight: 600;
         }
 
         .github-link:hover {
-            background: #764ba2;
+            background: #00a8cc;
             transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0, 212, 255, 0.4);
         }
 
         footer {
-            background: rgba(255, 255, 255, 0.95);
+            background: #1a1a1a;
             padding: 20px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
             text-align: center;
-            color: #666;
+            color: #b0b0b0;
+            border: 1px solid #333;
         }
 
         @media (max-width: 768px) {
@@ -210,13 +219,13 @@
         <div class="projects-grid">
             <div class="project-card">
                 <h3>Semi-Prime Factorization Algorithm</h3>
-                <p>Original mathematical research project that discovers and implements a pattern-based algorithm for factoring a specific class of semi-prime numbers. Semi-primes with gap=4 are products of two prime numbers that differ by exactly 4 (e.g., 3×7=21, 7×11=77, 13×17=221).</p>
+                <p>Original mathematical research project that discovers and implements a pattern-based algorithm for factoring a specific class of semi-prime numbers. Semi-primes with gap=4 are products of two prime numbers that differ by exactly 4 (e.g., 3×7=21, 7×11=77, 13×17=221). I developed an algorithm that efficiently calculates the prime factors of numbers using number theory analysis and computational experimentation, bypassing traditional factorization approaches through pattern recognition for this specific class of numbers.</p>
                 
                 <div class="key-achievement">
-                    <strong>Key Achievement:</strong> My program almost instantaneously factors semi-primes exceeding 1 quadrillion (e.g., 1,224,999,929,999,997 → 34,999,997 × 35,000,001).
+                    <strong>Key Achievement:</strong> Demonstrated the efficiency of computation using patterns in factorization. My program almost instantaneously factors semi-primes exceeding 1 quadrillion (e.g., 1,224,999,929,999,997 → 34,999,997 × 35,000,001).
                 </div>
 
-                <p>The sequence generator produces candidates for semi-prime factorization and validates output across very large number ranges. This work demonstrates graduate-level research in computational mathematics, showcasing my ability to identify mathematical patterns, work with algorithms, and apply creative problem-solving independently.</p>
+                <p>The sequence generator produces candidates for semi-prime factorization and validates output across very large number ranges. This work demonstrates my ability to conduct graduate-level research using computational mathematics while showcasing my capacity to identify and manipulate mathematical patterns, work with algorithms, use creative problem-solving, and work independently.</p>
 
                 <div class="technologies">
                     <h4>Technologies:</h4>
@@ -227,13 +236,13 @@
                         <span class="tech-tag">Mathematical Research</span>
                     </div>
                 </div>
+
+                <a href="https://github.com/Deanwillis-atp/semiprime_factorizer" target="_blank" class="github-link">View on GitHub →</a>
             </div>
 
             <div class="project-card">
                 <h3>Amazon Review Sentiment Analyzer</h3>
-                <p>A program that uses sentiment analysis to identify whether Amazon reviews are positive or negative. Using the Amazon Review Polarity Dataset (3.6 million reviews spanning 18 years), this project applies machine learning and natural language processing techniques.</p>
-
-                <p>The model uses a Support Vector Machine (SVM) with linear kernel to separate data classes and TF-IDF vectorization for text extraction. The system predicts sentiment polarity with high accuracy on test data, applying NLP techniques to classify text for real-world applications.</p>
+                <p>I developed a program that uses sentiment analysis to identify whether Amazon reviews are positive or negative. My program uses the Amazon Review Polarity Dataset (3.6 million reviews spanning 18 years), as well as machine learning and natural language processing. My model uses a Support Vector Machine (SVM) to separate two classes of data with a straight line (linear kernel) and TF-IDF vectorization to extract text. The system predicts sentiment polarity from the text with accuracy as was demonstrated on test data. My project applies NLP techniques to classify text for real-world application.</p>
 
                 <div class="technologies">
                     <h4>Technologies:</h4>
@@ -258,7 +267,7 @@
                 <p>A second bot, Kathy, intervenes to warn players, creating a complex narrative with 12+ decision points and multiple endings. The project demonstrates advanced bot coordination, asynchronous message timing for dramatic effect, persistent state management across user sessions, and integration of web (Flask) and chat (Discord API) platforms.</p>
 
                 <div class="key-achievement">
-                    <strong>Features:</strong> Multi-bot coordination, 12+ branching decision points, retro terminal web interface, timed async messaging for suspense, and fake social media integration (FaceLibrary).
+                    <strong>Features:</strong> Multi-bot coordination (Billy and Kathy), 12+ branching decision points, retro terminal web interface, timed async messaging for suspense, fake social media integration (FaceLibrary), and cross-bot communication through JSON file triggers.
                 </div>
 
                 <div class="technologies">
