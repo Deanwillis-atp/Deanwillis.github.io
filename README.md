@@ -1,241 +1,287 @@
-<style>
-    .portfolio-container {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-        color: #333;
-        max-width: 8.5in;
-        margin: 0 auto;
-        padding: 0.75in;
-        background: white;
-    }
-    
-    .portfolio-header {
-        text-align: center;
-        border-bottom: 3px solid #667eea;
-        padding-bottom: 20px;
-        margin-bottom: 30px;
-    }
-    
-    .portfolio-header h1 {
-        font-size: 2.2em;
-        color: #667eea;
-        margin-bottom: 5px;
-    }
-    
-    .portfolio-header .subtitle {
-        font-size: 1.1em;
-        color: #666;
-        margin-bottom: 15px;
-    }
-    
-    .contact-info {
-        font-size: 0.95em;
-        color: #555;
-    }
-    
-    .contact-info a {
-        color: #667eea;
-        text-decoration: none;
-    }
-    
-    .portfolio-section {
-        margin-bottom: 35px;
-    }
-    
-    .portfolio-section h2 {
-        color: #667eea;
-        font-size: 1.5em;
-        border-bottom: 2px solid #e0e0e0;
-        padding-bottom: 8px;
-        margin-bottom: 15px;
-    }
-    
-    .about-text {
-        text-align: justify;
-        margin-bottom: 20px;
-    }
-    
-    .project {
-        margin-bottom: 30px;
-        padding: 20px;
-        background: #f8f9fa;
-        border-radius: 8px;
-        border-left: 4px solid #667eea;
-    }
-    
-    .project h3 {
-        color: #667eea;
-        font-size: 1.3em;
-        margin-bottom: 10px;
-    }
-    
-    .project-description {
-        margin-bottom: 12px;
-        text-align: justify;
-    }
-    
-    .highlight-box {
-        background: #fff3cd;
-        border-left: 4px solid #ffc107;
-        padding: 10px 15px;
-        margin: 10px 0;
-        font-size: 0.95em;
-    }
-    
-    .tech-stack {
-        margin: 12px 0;
-    }
-    
-    .tech-stack strong {
-        color: #555;
-        font-size: 0.9em;
-    }
-    
-    .tech-stack span {
-        display: inline-block;
-        background: white;
-        padding: 4px 10px;
-        margin: 3px 5px 3px 0;
-        border-radius: 3px;
-        font-size: 0.85em;
-        border: 1px solid #ddd;
-    }
-    
-    .github-link {
-        color: #667eea;
-        text-decoration: none;
-        font-size: 0.9em;
-        font-weight: 500;
-    }
-    
-    .github-link:before {
-        content: "→ ";
-    }
-    
-    .portfolio-footer {
-        margin-top: 40px;
-        padding-top: 20px;
-        border-top: 2px solid #e0e0e0;
-        text-align: center;
-        font-size: 0.9em;
-        color: #666;
-    }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dean Willis - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<div class="portfolio-container">
-    <header class="portfolio-header">
-        <h1>Dean Willis</h1>
-        <div class="subtitle">Finance Graduate (B.S.) | Minor in Applied Computing<br>
-        Interest in Machine Learning & Database Systems</div>
-        <div class="contact-info">
-            <a href="mailto:deanwillis@outlook.com">deanwillis@outlook.com</a> | 
-            <a href="https://github.com/Deanwillis-atp">github.com/Deanwillis-atp</a> | 
-            <a href="https://deanwillis.com">deanwillis.com</a>
-        </div>
-    </header>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
 
-    <section class="portfolio-section about">
-        <h2>About</h2>
-        <p class="about-text">
-            Finance graduate (B.S.) with a minor in Applied Computing, currently pursuing an M.S. in Computer Science at the University of South Carolina. My academic focus centers on machine learning applications and database systems, with hands-on experience in Python development, full-stack web applications, and computational mathematics. I am passionate about building intelligent systems and exploring the intersection of mathematics, data science, and software engineering. Through my projects, I have developed strong problem-solving skills and a commitment to writing clean, efficient code.
-        </p>
-    </section>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-    <section class="portfolio-section projects">
-        <h2>Featured Projects</h2>
-        
-        <div class="project">
-            <h3>Semi-Prime Factorization Algorithm (Gap=4)</h3>
-            <p class="project-description">
-                Original mathematical research project that discovers and implements a pattern-based algorithm for factoring a specific class of semi-prime numbers. Semi-primes with gap=4 are products of two prime numbers that differ by exactly 4 (e.g., 3×7=21, 7×11=77, 13×17=221). Through computational experimentation and number theory analysis, I developed an algorithm that can efficiently calculate the prime factors of these numbers without traditional brute-force factorization methods.
-            </p>
-            <div class="highlight-box">
-                <strong>Key Achievement:</strong> Successfully factors semi-primes exceeding 2 trillion (e.g., 2,208,062,262,021 → 1,485,953 × 1,485,957) with near-instant computation, demonstrating the efficiency of pattern-based approaches over traditional factorization methods that would require hours or days for numbers of this magnitude.
-            </div>
-            <p class="project-description">
-                The project includes a sequence generator that produces valid semi-prime candidates and validates factorization accuracy across large number ranges. This work demonstrates independent research ability, creative problem-solving in computational mathematics, algorithmic thinking, and the capacity to identify and exploit mathematical patterns—skills essential for graduate-level research.
-            </p>
-            <div class="tech-stack">
-                <strong>Technologies:</strong>
-                <span>Python</span>
-                <span>Number Theory</span>
-                <span>Algorithm Design</span>
-                <span>Mathematical Pattern Recognition</span>
-                <span>Computational Mathematics</span>
-            </div>
-            <a href="https://github.com/Deanwillis-atp/semiprime-repo" class="github-link">View on GitHub (coming soon)</a>
-        </div>
-        
-        <div class="project">
-            <h3>Amazon Review Sentiment Analyzer</h3>
-            <p class="project-description">
-                Sentiment analysis model that classifies Amazon product reviews as positive or negative using natural language processing and machine learning. Built using the Amazon Review Polarity Dataset (3.6 million reviews spanning 18 years), the model implements TF-IDF vectorization for text feature extraction and a Support Vector Machine (SVM) classifier with a linear kernel for binary classification.
-            </p>
-            <p class="project-description">
-                The system processes review text to predict sentiment polarity, achieving strong accuracy on test data. The project demonstrates practical application of NLP techniques, text preprocessing, feature engineering, and supervised learning for real-world text classification tasks. Initial experimentation also explored NLTK's VADER sentiment analyzer for comparative analysis.
-            </p>
-            <div class="tech-stack">
-                <strong>Technologies:</strong>
-                <span>Python</span>
-                <span>Scikit-learn</span>
-                <span>Pandas</span>
-                <span>NLTK</span>
-                <span>TF-IDF</span>
-                <span>SVM</span>
-                <span>Natural Language Processing</span>
-            </div>
-            <a href="https://github.com/Deanwillis-atp/sentiment_analyzer" class="github-link">View on GitHub</a>
-        </div>
-        
-        <div class="project">
-            <h3>Text-Based RPG Adventure Game</h3>
-            <p class="project-description">
-                Interactive text-based role-playing game featuring story-driven gameplay, dynamic inventory management, combat mechanics, and branching narrative paths based on player decisions. Demonstrates strong object-oriented programming principles including inheritance, encapsulation, and polymorphism. The game architecture includes a robust state management system, character progression mechanics, and save/load functionality, showcasing end-to-end software development skills.
-            </p>
-            <div class="tech-stack">
-                <strong>Technologies:</strong>
-                <span>Python/Java</span>
-                <span>Object-Oriented Programming</span>
-                <span>Game Logic Design</span>
-                <span>State Management</span>
-            </div>
-            <a href="https://github.com/Deanwillis-atp/rpg-project" class="github-link">View on GitHub</a>
-        </div>
-        
-        <div class="project">
-            <h3>Full-Stack CRUD Application</h3>
-            <p class="project-description">
-                Complete CRUD (Create, Read, Update, Delete) application with user authentication, database integration, and RESTful API architecture. Features include secure user management, data validation, responsive frontend design, and efficient database queries. The application demonstrates full-stack development capabilities from database schema design and backend API development to frontend user interface implementation, incorporating industry best practices for security and scalability.
-            </p>
-            <div class="tech-stack">
-                <strong>Technologies:</strong>
-                <span>React/Node.js</span>
-                <span>PostgreSQL/MongoDB</span>
-                <span>REST API</span>
-                <span>JWT Authentication</span>
-                <span>Express.js</span>
-            </div>
-            <a href="https://github.com/Deanwillis-atp/crud-project" class="github-link">View on GitHub</a>
-        </div>
-        
-        <div class="project">
-            <h3>Classic Word Games Collection</h3>
-            <p class="project-description">
-                Collection of classic word games including Hangman, implementing clean function-based architecture with modular design principles. Features include input validation, error handling, game state persistence, and an intuitive user interface. The project demonstrates fundamental programming concepts, string manipulation techniques, and user experience design considerations, with emphasis on code readability and maintainability.
-            </p>
-            <div class="tech-stack">
-                <strong>Technologies:</strong>
-                <span>Python</span>
-                <span>Functional Programming</span>
-                <span>Input Validation</span>
-                <span>Logic Design</span>
-            </div>
-            <a href="https://github.com/Deanwillis-atp/games-project" class="github-link">View on GitHub</a>
-        </div>
-    </section>
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+            text-align: center;
+        }
 
-    <footer class="portfolio-footer">
-        <p>Portfolio prepared for University of South Carolina M.S. in Computer Science Program</p>
-        <p>All projects available at <a href="https://github.com/Deanwillis-atp">github.com/Deanwillis-atp</a></p>
-    </footer>
-</div>
+        h1 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-links a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 2px solid #667eea;
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+
+        .contact-links a:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .about-section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+        }
+
+        .about-section h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 2em;
+        }
+
+        .about-section p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .project-card p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .key-achievement {
+            background: #f0f4ff;
+            padding: 15px;
+            border-left: 4px solid #667eea;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        .key-achievement strong {
+            color: #667eea;
+        }
+
+        .technologies {
+            margin-top: 20px;
+        }
+
+        .technologies h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tech-tag {
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9em;
+        }
+
+        .github-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s;
+        }
+
+        .github-link:hover {
+            background: #764ba2;
+            transform: translateX(5px);
+        }
+
+        footer {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dean Willis</h1>
+            <p class="subtitle">Finance Graduate (B.S.) | Minor in Applied Computing</p>
+            <p class="subtitle">M.S. Computer Science Student | Machine Learning & Database Systems</p>
+            <div class="contact-links">
+                <a href="mailto:deanwillis@outlook.com">Email</a>
+                <a href="https://github.com/Deanwillis-atp" target="_blank">GitHub</a>
+                <a href="https://deanwillis.com" target="_blank">Website</a>
+            </div>
+        </header>
+
+        <section class="about-section">
+            <h2>About Me</h2>
+            <p>Finance graduate (B.S.) with a minor in Applied Computing, currently pursuing an M.S. in Computer Science at the University of South Carolina. I have experience in full-stack web applications, Python, and computational mathematics. I developed strong problem solving skills and applied clean, efficient code while working on projects. Going forward, my academic focus is on machine learning and database systems, as I am passionate about building intelligent systems while exploring how mathematics and software engineering work.</p>
+        </section>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Semi-Prime Factorization Algorithm</h3>
+                <p>Original mathematical research project that discovers and implements a pattern-based algorithm for factoring a specific class of semi-prime numbers. Semi-primes with gap=4 are products of two prime numbers that differ by exactly 4 (e.g., 3×7=21, 7×11=77, 13×17=221).</p>
+                
+                <div class="key-achievement">
+                    <strong>Key Achievement:</strong> My program almost instantaneously factors semi-primes exceeding 1 quadrillion (e.g., 1,224,999,929,999,997 → 34,999,997 × 35,000,001).
+                </div>
+
+                <p>The sequence generator produces candidates for semi-prime factorization and validates output across very large number ranges. This work demonstrates graduate-level research in computational mathematics, showcasing my ability to identify mathematical patterns, work with algorithms, and apply creative problem-solving independently.</p>
+
+                <div class="technologies">
+                    <h4>Technologies:</h4>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Number Theory</span>
+                        <span class="tech-tag">Algorithm Design</span>
+                        <span class="tech-tag">Mathematical Research</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Amazon Review Sentiment Analyzer</h3>
+                <p>A program that uses sentiment analysis to identify whether Amazon reviews are positive or negative. Using the Amazon Review Polarity Dataset (3.6 million reviews spanning 18 years), this project applies machine learning and natural language processing techniques.</p>
+
+                <p>The model uses a Support Vector Machine (SVM) with linear kernel to separate data classes and TF-IDF vectorization for text extraction. The system predicts sentiment polarity with high accuracy on test data, applying NLP techniques to classify text for real-world applications.</p>
+
+                <div class="technologies">
+                    <h4>Technologies:</h4>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">SVM</span>
+                        <span class="tech-tag">TF-IDF</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">NLTK</span>
+                        <span class="tech-tag">NLP</span>
+                    </div>
+                </div>
+
+                <a href="https://github.com/Deanwillis-atp/sentiment_analyzer" target="_blank" class="github-link">View on GitHub →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Interactive Horror Narrative Game</h3>
+                <p>Multi-bot interactive horror experience delivered through Discord, combining narrative game design with full-stack development. Players sign up through a retro terminal-style web interface for a 'weather assistant' named Billy, who gradually reveals sinister intentions through timed, branching conversation trees.</p>
+
+                <p>A second bot, Kathy, intervenes to warn players, creating a complex narrative with 12+ decision points and multiple endings. The project demonstrates advanced bot coordination, asynchronous message timing for dramatic effect, persistent state management across user sessions, and integration of web (Flask) and chat (Discord API) platforms.</p>
+
+                <div class="key-achievement">
+                    <strong>Features:</strong> Multi-bot coordination, 12+ branching decision points, retro terminal web interface, timed async messaging for suspense, and fake social media integration (FaceLibrary).
+                </div>
+
+                <div class="technologies">
+                    <h4>Technologies:</h4>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Discord.py</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">JSON</span>
+                        <span class="tech-tag">Async Programming</span>
+                        <span class="tech-tag">Game Design</span>
+                    </div>
+                </div>
+
+                <a href="https://github.com/Deanwillis-atp/Billy_V2" target="_blank" class="github-link">View on GitHub →</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Dean Willis. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
