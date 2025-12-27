@@ -1,4 +1,3 @@
-# Deanwillis.github.io
 <style>
     .portfolio-container {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
