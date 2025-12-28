@@ -207,7 +207,7 @@
             <div class="contact-links">
                 <a href="mailto:deanwillis@outlook.com">Email</a>
                 <a href="https://github.com/Deanwillis-atp" target="_blank">GitHub</a>
-                <a href="https://deanwillis.com" target="_blank">Website</a>
+                
             </div>
         </header>
 
@@ -287,9 +287,7 @@
             </div>
         </div>
 
-        <footer>
-            <p>&copy; 2025 Dean Willis. All rights reserved.</p>
-        </footer>
+       
     </div>
 </body>
 </html>
