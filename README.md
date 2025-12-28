@@ -19,7 +19,7 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 2600px;
             margin: 0 auto;
             padding: 20px;
         }
